@@ -138,3 +138,11 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # your frontend URL
     "http://127.0.0.1:3000",
 ]
+
+
+from datetime import timedelta
+# JWT settings
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
+}

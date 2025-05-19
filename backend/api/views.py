@@ -32,7 +32,7 @@ def signup(request):
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def protected_route(request):
-    return Response({"msg": "this is a protected route"})
+    return Response({"msg": "you are able to access this route"},status=status.HTTP_200_OK)
 
 # @api_view(['POST'])
 # def login(request):
